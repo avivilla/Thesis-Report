@@ -1,0 +1,50 @@
+\documentclass{standalone}
+\usepackage{standalone}
+
+\begin{document}
+
+\chapter{Background Study}
+\section{Literature Review}
+As we have discussed earlier, there had been works in English,German and other european languages that show great accuracy in POS Tagging. Researches on Bengali POS Tagging has also been made for a while. But unfortunately, there had not been any significant or practical success in Bengali POS Tagging till now.\\
+\begin{itemize}
+    \item Dandapat, Sarkar, and Basu have used a hybrid model of supervised and unsupervised learning method alongside Hidden Markov Model\cite{dandapat2004hybrid}. They have got 95\% accuracy, but that is on a small tagged corpus. We can not be sure how it will work in a practical huge corpus.\\
+    \item Ekbal and Bandyopadhyay have used a Hidden Markov Model to tag Bengali dataset and got an accuracy of 91.6\% \cite{ekbal2007lexicon}\\
+    \item Ekbal, Haque, and Bandyopadhyay have presented a Maximum Entropy-based POS Tagger that has demonstrated an accuracy of 88.2\% for a test set of 20K word forms \cite{ekbal2008maximum}. This Outperforms their HMM-based Model.\\
+    \item Ekbal, Haque, and Bandyopadhyay have trained and tested the 72,341 and 20K wordforms in their CRF based POS tagger\cite{ekbal2007bengali}. Their proposed CRF based POS tagger shows an accuracy of 90.3\%. Their CRF Framework Works well in prefix and suffix of length up to three, NE information of the current and the previous words, POS information of the previous word, digit features, symbol features, and the various gazetteer lists.\\
+    \item Again Ekbal and Bandyopadhyay have modeled an Support Vector Machine framework that has been trained and tested with the 72,341 and 20 K wordforms. This method shows the effectiveness of 86.84\%\cite{ekbalsvm}.\\
+    \item Sarkar and Gayen have implemented a supervised Bengali trigram POS Tagger from scratch using a statistical machine learning technique that uses the second-order Hidden Markov Model (HMM)\cite{sarkar}.\\
+    \item Mukherjee and Mandal have worked on an automatic POS tagging for Bengali that uses Global Linear Model (GLM) which learns to represent the whole sentence through a feature vector called Global feature\cite{mukherjee}.Their experimental accuracy was 93.12 \%. \\
+    \item Chakrabarti has proposed a rule based POS Tagger with 4 levels of layer tagging that also handles multiverb expressions.\cite{chakrabarti2011layered}\\
+    \item Uddin, Khan, Islam, and Jannat have proposed a Neural Network-based approach for Bengali POS Tagger\cite{uddin}. They have also proposed to use a dynamic programming technique to reduce time complexity.\\
+\end{itemize}
+
+
+\section{Works Comparisons}
+While Studying the background we have collected some comparisons of the researchers work.
+\begin{itemize}
+    \item Mukherjee and Mandal have made a comparison of how various models work in two different datasets, their own dataset, and the NLTK dataset\cite{mukherjee}.\\
+    \vspace{.5cm}
+    \input{tex/table/mukherjeeComparison.tex}
+\\
+   \item Uddin, Khan, Islam, and Jannat has given an accuracy
+    comparison of different methods in their paper\cite{uddin}.
+    \vspace{.5cm}
+    \input{tex/table/nazimtable.tex}
+\\
+    \item Ekbal and  Bandyopadhyay have shown an comparison table on their HMM models.
+\\
+\vspace{.5cm}
+\input{tex/table/ekbalhmm.tex}
+\\
+\item Ekbal, Haque, and Bandyopadhyay had some comparison on their ME- based work \cite{ekbal2008maximum}.\\
+\vspace{.5cm}
+\input{tex/table/EkbalComparison.tex}
+\\
+\item Sarkar and Gayen have made a comparison between Trigram and Bigram taggers’ accuracy \cite{sarkar}\\
+\vspace{.5cm}
+\input{tex/table/sarkartable.tex}
+\end{itemize}
+
+
+
+\end{document}

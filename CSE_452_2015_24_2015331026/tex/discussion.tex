@@ -1,0 +1,59 @@
+\documentclass{standalone}
+\usepackage{standalone}
+
+\begin{document}
+\chapter{Discussion}
+\label{chap:Discussion}
+Here we will have a short analysis of our works and the places of improvement in this work.
+\section{Result Analysis}
+So far now, we have trialed with 3 different Architecture and rectified 2 major drawbacks. The whole work’s output can be shown in a single table \ref{finaltable}
+\begin{table}[h!]
+    \centering
+        \begin{tabular}{|c|c|}
+            \hline
+            \textbf{model} & ]\textbf{accuracy} \\ [1ex]
+            \hline
+            initial model & 51.71\% \\
+            \hline
+             Bi-LSTM & 55.77\% \\
+              \hline
+                initial model + Higher Probability First & 72.9\%\\
+            \hline
+             Sequential model + Higher Probability First & 83.8\%\\
+            \hline
+           
+            initial model + Higher Probability First + Higher Class
+            Difference & 84.7\%  \\ 
+            \hline
+            Bi-LSTM + Higher Probability First & 85.56\%\\
+            \hline
+            Sequential model + Higher Probability First + Higher Class
+            Difference & 89.45\%  \\ 
+            \hline
+            Bi-LSTM + Higher Probability First + Higher Class
+            Difference & 90(89.98)\%  \\ 
+            \hline
+        \end{tabular}
+        \caption{experiment results with initial model}
+        \label{finaltable}
+\end{table}
+From table \ref{finaltable}, it is clear that without using Higher Probability First and Higher Class Difference, the accuracy is less than 60\% in each model. But using Higher Probability First, it jumps to almost 85\%. Adding Higher Class Difference we can achieve the best result of almost 90\%. So we can say that without rectifying these two drawbacks we could not get a satisfactory result.
+\section{Scopes of Works}
+We can not say that the work is anywhere close to the satisfactory works done on other languages. So there are a lot of things that can be improved.
+\subsection{A Corpus of word and tags}
+We had to use an XML based dictionary for handling unknown words problems in a very naive way discussed in section \ref{}. So we need a huge data corpus to provide us with more words and tags. That will strengthen the base of this works, feeding probability as a feature.
+
+\subsection{CRF based Model}
+The best result in Bengali POS Tagging has been found using the CRF based model. We could not work with that. So we are hopeful of a good result using that technique.
+\subsection{Merging with traditional features}
+Using probability as a feature along with the traditional morphological features can be a huge advantage in the work of this field. This can enhance the chance to get a better model.
+
+
+
+
+
+
+
+
+
+\end{document}

@@ -1,0 +1,17 @@
+\begin{table}[h]
+\centering
+\arrayrulecolor{black}
+\resizebox{\columnwidth}{!}{
+\large
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Model}                        & \textbf{Accuracy (in \%)} \\ \hline
+HMM                                    & 83.04 \%                   \\ \hline
+HMM  + Unknown feature                         & 86.38 \%                   \\ \hline
+HMM  + Unknown feature  + NER                   & 88.45 \%                   \\ \hline
+HMM + unknown word features + NER + Lexicons &  91.6 \%                   \\ \hline
+\end{tabular}}
+\arrayrulecolor{black}
+\caption{Evaluation results of the POS tagger for the unknown words in the test set in HMM based POS Tagger  \cite{ekbal2007lexicon}}
+\label{tab:my-table}
+\end{table}
